@@ -18,7 +18,7 @@ client.on('message', function(topic, bufferMessage){
         if(err) throw err;
         console.log('Connection is okay')
 
-        var dbo = db.db("EnergyMonitoringSystem").collection('DailyValues')
+        var dbo = db.db("EnergyMonitoringSystem").collection('DailyValues2')
     
         dbo.insertOne({
             message: jsonMessage
